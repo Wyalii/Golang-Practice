@@ -7,6 +7,31 @@ import (
 func main() {
 	intArr := [...]int32{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 	intSlice := intArr[1:6]
+	var myMap = map[string]uint8{"Giorgi": 19, "Mari": 10}
+	fmt.Println(myMap)
+	var age, ok = myMap["Giorgi"]
+	if ok {
+		fmt.Println(age)
+		fmt.Println(ok)
+	} else {
+		fmt.Println("Key on map doesn't exists try again.")
+		fmt.Println(age)
+
+	}
+
+	for name, age := range myMap {
+		println(name, age)
+	}
+	for i, v := range intArr {
+		fmt.Println()
+		fmt.Printf("Index: %v Value: %v", i, v)
+
+	}
+
+	for i := 1; i < 10; i++ {
+		println("free candy")
+
+	}
 	fmt.Printf("the length is %v, with capacity %v", len(intSlice), cap(intSlice))
 	fmt.Println()
 	intSlice = append(intSlice, 11, 12, 13)
