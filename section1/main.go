@@ -35,5 +35,7 @@ func main() {
 	fmt.Println(string1, string2, string3, string4)
 
 	//here im using function that is declared in other file that uses package lvl variable declared in this file cool :)
-	printPackageLevelVariable()
+	// printPackageLevelVariable()
+
+	usingJoinForCommandLineArgument()
 }
